@@ -46,6 +46,8 @@ export default function SurveyComponent() {
           }
         );
         console.log("Successful response: ", response);
+        window.location.href =
+          "https://sentiment-gamma.vercel.app/dashboard/profile";
       } catch (error) {
         console.error("Error signing or sending data: ", error);
       }
