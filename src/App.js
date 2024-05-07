@@ -48,7 +48,8 @@ export default function SurveyComponent() {
           },
           {
             headers: {
-              "x-api-key": "SENTIMENT_STREAM_API_CYBERLETE",
+              "x-api-key":
+                "49f862a7565e3b148bde7f6964c6e20ab4e312ba726c236c0f2ff1f5ebaf3588",
             },
           }
         );
