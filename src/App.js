@@ -1,14 +1,20 @@
 import axios from "axios";
 import { SentimentModel, SentimentSurvey } from "sentiment-survey";
-import surveyJson from "./surveyJson.json";
 import surveyTheme from "./surveyTheme.json";
 import "survey-core/defaultV2.min.css";
 import "survey-creator-core/survey-creator-core.min.css";
+import survey1 from "./surveys/survey1.json";
+import survey2 from "./surveys/survey2.json";
+import survey3 from "./surveys/survey3.json";
+import survey4 from "./surveys/survey4.json";
+import survey5 from "./surveys/survey5.json";
+import survey6 from "./surveys/survey6.json";
+import survey7 from "./surveys/survey7.json";
 
 const SENTIMENT_STREAM_ID = "CYBERLETE_SENTIMENT_05_2024_LEET_COIN";
 
 export default function SurveyComponent() {
-  const survey = new SentimentModel(surveyJson);
+  const survey = new SentimentModel(survey1);
   survey.applyTheme(surveyTheme);
 
   survey.onComplete.add(async (sender) => {
@@ -38,6 +44,7 @@ export default function SurveyComponent() {
             sender: sender,
             signature: signature,
             walletAddress: account,
+            surveyId: survey1.survey_id,
           },
           {
             headers: {

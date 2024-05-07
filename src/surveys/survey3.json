@@ -1,0 +1,23 @@
+{
+  "survey_id": "3",
+  "title": "Survey",
+  "description": "Earn $LEET for answering survey questions.",
+  "logo": "https://api.surveyjs.io/private/Surveys/files?name=3d5bee9f-c148-46d4-8ad0-1f48f5489f19",
+  "logoWidth": "200px",
+  "logoHeight": "100px",
+  "completedHtml": "<h3>Thank you for your response.</h3>",
+  "pages": [
+    {
+      "name": "MoreUserProfile",
+      "elements": [
+        {
+          "type": "comment",
+          "name": "feedback",
+          "title": "What improvements would you like to see in gaming software?",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "headerView": "advanced"
+}

@@ -1,0 +1,38 @@
+{
+  "survey_id": "2",
+  "title": "Survey",
+  "description": "Earn $LEET for answering survey questions.",
+  "logo": "https://api.surveyjs.io/private/Surveys/files?name=3d5bee9f-c148-46d4-8ad0-1f48f5489f19",
+  "logoWidth": "200px",
+  "logoHeight": "100px",
+  "completedHtml": "<h3>Thank you for your response.</h3>",
+  "pages": [
+    {
+      "name": "GamingPreferences",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "favoriteGenres",
+          "title": "What are your favorite gaming genres?",
+          "choices": [
+            "FPS",
+            "MMO",
+            "Casual",
+            "Adventure",
+            "Puzzle",
+            "RPG",
+            "Sports"
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "rating",
+          "name": "satisfaction",
+          "title": "How satisfied are you with the current state of fair play in online gaming?",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "headerView": "advanced"
+}

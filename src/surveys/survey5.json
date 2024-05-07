@@ -1,0 +1,29 @@
+{
+  "survey_id": "5",
+  "title": "Survey",
+  "description": "Earn $LEET for answering survey questions.",
+  "logo": "https://api.surveyjs.io/private/Surveys/files?name=3d5bee9f-c148-46d4-8ad0-1f48f5489f19",
+  "logoWidth": "200px",
+  "logoHeight": "100px",
+  "completedHtml": "<h3>Thank you for your response.</h3>",
+  "pages": [
+    {
+      "name": "FeatureAndSecurity",
+      "elements": [
+        {
+          "type": "comment",
+          "name": "desiredFeatures",
+          "title": "What features are most important to you in a gaming anti-cheat software?",
+          "isRequired": true
+        },
+        {
+          "type": "boolean",
+          "name": "securityConcern",
+          "title": "Do you have concerns about privacy when using gaming software?",
+          "isRequired": true
+        }
+      ]
+    }
+  ],
+  "headerView": "advanced"
+}
