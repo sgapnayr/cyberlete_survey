@@ -9,30 +9,30 @@
   "showProgressBar": "top",
   "pages": [
     {
-      "name": "GamingProwess",
+      "name": "Gaming Prowess",
       "elements": [
         {
           "type": "radiogroup",
           "name": "gamingProwess",
           "title": "How would you rate your gaming prowess?",
-          "choices": ["novice", "casual", "expert", "savant", "god tier"],
+          "choices": ["Novice", "Casual", "Expert", "Savant", "God Tier"],
           "isRequired": true
         }
       ]
     },
     {
-      "name": "GamingMotivation",
+      "name": "Gaming Motivation",
       "elements": [
         {
           "type": "checkbox",
           "name": "gamingMotivation",
           "title": "Why do you game?",
           "choices": [
-            "competition",
-            "relaxation",
-            "escape",
-            "socializing",
-            "it’s my job",
+            "Competition",
+            "Relaxation",
+            "Escape",
+            "Socializing",
+            "It’s My Job",
             "Other"
           ],
           "isRequired": true
@@ -47,33 +47,33 @@
       ]
     },
     {
-      "name": "GamingPlatforms",
+      "name": "Gaming Platforms",
       "elements": [
         {
           "type": "checkbox",
           "name": "gamingPlatforms",
-          "title": "What gaming platforms do you primarily use? (click all that apply)",
+          "title": "What gaming platforms do you primarily use? (Click all that apply)",
           "choices": [
-            "PC elite",
-            "console crusader",
-            "mobile maven",
-            "I live under a rock"
+            "PC Elite",
+            "Console Crusader",
+            "Mobile Maven",
+            "I Live Under a Rock"
           ],
           "isRequired": true
         }
       ]
     },
     {
-      "name": "GamingDevices",
+      "name": "Gaming Devices",
       "elements": [
         {
           "type": "checkbox",
           "name": "gamingDevices",
           "title": "What devices do you use for gaming?",
           "choices": [
-            "mouse and keyboard",
-            "controller",
-            "VR headset",
+            "Mouse and Keyboard",
+            "Controller",
+            "VR Headset",
             "Other"
           ],
           "isRequired": true
@@ -88,45 +88,45 @@
       ]
     },
     {
-      "name": "KeybindingUsage",
+      "name": "Keybinding Usage",
       "elements": [
         {
           "type": "radiogroup",
           "name": "keybindingUsage",
           "title": "Do you use 'keybinding' or 'keymapping' to optimize your gameplay?",
-          "choices": ["Yes", "No", "What’s that?"],
+          "choices": ["Yes", "No", "What’s That?"],
           "isRequired": true
         }
       ]
     },
     {
-      "name": "MouseSensitivity",
+      "name": "Mouse Sensitivity",
       "elements": [
         {
           "type": "radiogroup",
           "name": "mouseSensitivity",
           "title": "Do you tune your trackpad or 'mouse sensitivity' settings?",
-          "choices": ["No", "Yes", "Again, what’s that?"],
+          "choices": ["No", "Yes", "Again, What’s That?"],
           "isRequired": true
         }
       ]
     },
     {
-      "name": "OnlineGamingFrustrations",
+      "name": "Online Gaming Frustrations",
       "elements": [
         {
           "type": "checkbox",
           "name": "onlineGamingFrustrations",
           "title": "What frustrates you the most when gaming online?",
           "choices": [
-            "lag and connectivity issues",
-            "toxic players",
-            "difficult game mechanics",
-            "annoying advertising",
-            "lack of content",
-            "Cheaters and hackers",
+            "Lag and Connectivity Issues",
+            "Toxic Players",
+            "Difficult Game Mechanics",
+            "Annoying Advertising",
+            "Lack of Content",
+            "Cheaters and Hackers",
             "Other",
-            "none of the above"
+            "None of the Above"
           ],
           "isRequired": true
         },
@@ -140,12 +140,6 @@
       ]
     }
   ],
-  "navigateToUrl": "https://cyberlete.io/",
-  "navigateToUrlOnCondition": [
-    {
-      "expression": "Click here if you would like to see your data.",
-      "url": "https://sentiment-gamma.vercel.app/dashboard/profile"
-    }
-  ],
-  "headerView": "advanced"
+
+  "headerView": "Advanced"
 }
