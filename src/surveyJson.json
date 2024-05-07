@@ -139,5 +139,6 @@
       ]
     }
   ],
+  "navigateToUrl": "https://sentiment-gamma.vercel.app/dashboard/profile",
   "headerView": "advanced"
 }
