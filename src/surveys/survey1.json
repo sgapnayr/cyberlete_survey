@@ -1,142 +1,150 @@
 {
-  "title": "Survey",
-  "description": "Earn $LEET for answering survey questions.",
+  "survey_id": "1",
+  "title": "Gaming Experience Survey",
+  "description": "Earn $LEET for answering a few questions.",
   "logo": "https://api.surveyjs.io/private/Surveys/files?name=3d5bee9f-c148-46d4-8ad0-1f48f5489f19",
   "logoWidth": "200px",
   "logoHeight": "100px",
   "completedHtml": "<h3>Thank you for your response.</h3>",
+  "showProgressBar": "top",
   "pages": [
     {
-      "name": "UserProfile",
-      "elements": [
-        {
-          "type": "text",
-          "name": "username",
-          "title": "What is your gamer tag?",
-          "isRequired": true
-        },
-        {
-          "type": "dropdown",
-          "name": "age",
-          "title": "Select your age range",
-          "choices": ["Under 18", "18-24", "25-34", "35-44", "45-54", "55+"],
-          "isRequired": true
-        }
-      ]
-    },
-    {
-      "name": "GamingPreferences",
-      "elements": [
-        {
-          "type": "checkbox",
-          "name": "favoriteGenres",
-          "title": "What are your favorite gaming genres?",
-          "choices": [
-            "FPS",
-            "MMO",
-            "Casual",
-            "Adventure",
-            "Puzzle",
-            "RPG",
-            "Sports"
-          ],
-          "isRequired": true
-        },
-        {
-          "type": "rating",
-          "name": "satisfaction",
-          "title": "How satisfied are you with the current state of fair play in online gaming?",
-          "isRequired": true
-        }
-      ]
-    },
-    {
-      "name": "MoreUserProfile",
-      "elements": [
-        {
-          "type": "comment",
-          "name": "feedback",
-          "title": "What improvements would you like to see in gaming software?",
-          "isRequired": true
-        }
-      ]
-    },
-    {
-      "name": "MediaAndSocial",
+      "name": "GamingProwess",
       "elements": [
         {
           "type": "radiogroup",
-          "name": "preferredPlatform",
-          "title": "Which gaming platform do you use the most?",
-          "choices": ["PC", "Console", "Mobile"],
-          "isRequired": true
-        },
-        {
-          "type": "checkbox",
-          "name": "socialMedia",
-          "title": "Which social media platforms do you use?",
-          "choices": ["Facebook", "Twitter", "Instagram", "Twitch", "YouTube"],
+          "name": "gamingProwess",
+          "title": "How would you rate your gaming prowess?",
+          "choices": ["novice", "casual", "expert", "savant", "god tier"],
           "isRequired": true
         }
       ]
     },
     {
-      "name": "FeatureAndSecurity",
-      "elements": [
-        {
-          "type": "comment",
-          "name": "desiredFeatures",
-          "title": "What features are most important to you in a gaming anti-cheat software?",
-          "isRequired": true
-        },
-        {
-          "type": "boolean",
-          "name": "securityConcern",
-          "title": "Do you have concerns about privacy when using gaming software?",
-          "isRequired": true
-        }
-      ]
-    },
-    {
-      "name": "ProfessionalAndIndustry",
-      "elements": [
-        {
-          "type": "text",
-          "name": "professionalAffiliation",
-          "title": "Are you affiliated with any eSports teams or organizations?",
-          "isRequired": true
-        },
-        {
-          "type": "rating",
-          "name": "industrySatisfaction",
-          "title": "Rate your satisfaction with the gaming industry's efforts against cheating",
-          "isRequired": true
-        }
-      ]
-    },
-    {
-      "name": "FinancialAndCrypto",
+      "name": "GamingMotivation",
       "elements": [
         {
           "type": "checkbox",
-          "name": "paymentTypes",
-          "title": "Which payment types do you use for gaming purchases?",
+          "name": "gamingMotivation",
+          "title": "Why do you game?",
           "choices": [
-            "Credit/Debit Cards",
-            "PayPal",
-            "Cryptocurrency",
+            "competition",
+            "relaxation",
+            "escape",
+            "socializing",
+            "it’s my job",
             "Other"
           ],
           "isRequired": true
         },
         {
-          "type": "dropdown",
-          "name": "cryptoUsage",
-          "title": "How often do you use cryptocurrency for transactions?",
-          "choices": ["Never", "Rarely", "Sometimes", "Often", "Always"],
+          "type": "comment",
+          "name": "otherGamingMotivation",
+          "title": "Please specify other reasons for gaming:",
+          "visibleIf": "{gamingMotivation} contains 'Other'",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "GamingPlatforms",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "gamingPlatforms",
+          "title": "What gaming platforms do you primarily use? (click all that apply)",
+          "choices": [
+            "PC elite",
+            "console crusader",
+            "mobile maven",
+            "I live under a rock"
+          ],
           "isRequired": true
         }
       ]
+    },
+    {
+      "name": "GamingDevices",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "gamingDevices",
+          "title": "What devices do you use for gaming?",
+          "choices": [
+            "mouse and keyboard",
+            "controller",
+            "VR headset",
+            "Other"
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "otherGamingDevices",
+          "title": "Please specify other devices used for gaming:",
+          "visibleIf": "{gamingDevices} contains 'Other'",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "name": "KeybindingUsage",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "keybindingUsage",
+          "title": "Do you use 'keybinding' or 'keymapping' to optimize your gameplay?",
+          "choices": ["Yes", "No", "What’s that?"],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "name": "MouseSensitivity",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "mouseSensitivity",
+          "title": "Do you tune your trackpad or 'mouse sensitivity' settings?",
+          "choices": ["No", "Yes", "Again, what’s that?"],
+          "isRequired": true
+        }
+      ]
+    },
+    {
+      "name": "OnlineGamingFrustrations",
+      "elements": [
+        {
+          "type": "checkbox",
+          "name": "onlineGamingFrustrations",
+          "title": "What frustrates you the most when gaming online?",
+          "choices": [
+            "lag and connectivity issues",
+            "toxic players",
+            "difficult game mechanics",
+            "annoying advertising",
+            "lack of content",
+            "Cheaters and hackers",
+            "Other",
+            "none of the above"
+          ],
+          "isRequired": true
+        },
+        {
+          "type": "comment",
+          "name": "otherOnlineGamingFrustrations",
+          "title": "Please specify other frustrations:",
+          "visibleIf": "{onlineGamingFrustrations} contains 'Other'",
+          "isRequired": false
+        }
+      ]
+    }
+  ],
+  "navigateToUrl": "https://cyberlete.io/",
+  "navigateToUrlOnCondition": [
+    {
+      "expression": "Click here if you would like to see your data.",
+      "url": "https://sentiment-gamma.vercel.app/dashboard/profile"
     }
   ],
   "headerView": "advanced"
